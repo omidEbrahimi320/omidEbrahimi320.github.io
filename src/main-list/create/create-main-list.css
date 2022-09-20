@@ -1,0 +1,15 @@
+body {
+    font-family: 'vazir';
+}
+
+.error {
+    opacity: 1;
+    background-color: rgb(241, 54, 54);
+    color: white;
+}
+
+.success {
+    opacity: 1;
+    background-color: yellowgreen;
+    color: white;
+}

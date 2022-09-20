@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create main</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="./create-main-list.css" rel="stylesheet">
+    <link href="./../../css-font/vazir.css" rel="stylesheet">
+</head>
+
+<body dir="rtl" class="hidden justify-center items-center h-screen bg-gray-100">
+    <div class="px-3 w-[320px] h-[250px]">
+        <form class="border p-3 flex flex-col justify-around items-center h-full rounded bg-white">
+            <h1 class="font-bold text-lg text-gray-700">ساختن دسته</h1>
+            <input type="text" class="title-main-list block border focus:outline-none p-1 w-[200px] rounded text-sm" placeholder="نام دسته را وارد کنید">
+            <div class="mt-5 flex justify-between w-3/5">
+                <button type="button" class="create-main-list w-[48%] py-2 rounded-md bg-green-700 text-white text-sm">اضافه</button>
+                <button type="button" class="w-[48%]">
+                    <a type="submit" class="cansel-create block w-full py-2 rounded-md text-sm bg-red-600 text-white">
+                        لغو
+                    </a>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="alert absolute right-5 bottom-5 px-3 py-[10px] min-w-[200px] text-sm transition-all rounded-md opacity-0"></div>
+
+    <script type="module" src="./create-main-list.js"></script>
+</body>
+
+</html>

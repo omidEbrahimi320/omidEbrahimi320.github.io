@@ -1,0 +1,28 @@
+body {
+    font-family: 'vazir';
+}
+
+.animation-auth-form {
+    margin-right: -1000px;
+}
+
+.error {
+    opacity: 1;
+    background-color: rgb(241, 54, 54);
+    color: white;
+}
+
+.success {
+    opacity: 1;
+    background-color: yellowgreen;
+    color: white;
+}
+
+.submit:disabled {
+    background-color: #eee;
+    color: black;
+}
+.submit:not(disabled) {
+    background-color: green;
+    color: white;
+}

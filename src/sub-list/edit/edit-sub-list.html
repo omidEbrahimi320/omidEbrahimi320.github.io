@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ویرایش زیر دسته ها</title>
+    <link rel="stylesheet" href="./../../../dist/output.css">
+    <link rel="stylesheet" href="./../../css-font/vazir.css">
+    <link rel="stylesheet" href="./edit-sub-list.css">
+</head>
+<body dir="rtl" class="hidden justify-center items-center h-screen bg-gray-100">
+    </div>
+    <div class="px-3 w-[320px] h-[250px]">
+        <form class="border p-3 flex flex-col justify-around items-center h-full rounded bg-white">
+            <h1 class="font-bold text-lg text-gray-700">ویرایش زیر دسته</h1>
+            <input type="text" class="input-title block border rounded 
+            focus:outline-none p-1 w-[200px] text-sm" placeholder="نام">
+            <input type="number" class="input-price block border rounded mt-[-10px]
+            focus:outline-none p-1 w-[200px] text-sm" placeholder="قیمت">
+            <div class="mt-5 flex justify-between w-3/5">
+                <button type="button" class="edit-sub-list w-[48%] rounded-md bg-green-700 py-2 text-sm text-white">ویرایش</button>
+                <button type="button" class="w-[48%]">
+                    <a type="submit" class="cancel-edit block w-full rounded-md bg-red-600 py-2 text-sm text-white">
+                        لغو
+                    </a>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="alert absolute right-5 bottom-5 px-3 py-[10px] min-w-[200px] text-sm transition-all rounded-md opacity-0"></div>
+
+    <script type="module" src="./edit-sub-list.js"></script>
+</body>
+</html>

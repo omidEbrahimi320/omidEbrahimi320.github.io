@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accounting</title>
+    <link href="./../../dist/output.css" rel="stylesheet">
+    <link href="./../css-font/vazir.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body dir="rtl" class="h-screen justify-center items-center bg-gray-100 hidden">
+    <div class="accounting flex justify-center h-4/5 xs:h-screen sm:h-screen xs:flex-col xs:w-full sm:flex-col w-10/12 p-[10px]">
+        <div class="box-main-list bg-white border rounded-lg xs:h-[400px] sm:h-[400px] overflow-auto
+        border-neutral-300 p-3 rounded-l-none w-[30%] text-right xs:w-full
+         xs:rounded-lg sm:w-full sm:rounded-lg">
+            <div>
+                <a href="./../main-list/create/create-main-list.html">
+                    <button class="create-main-list w-20 py-2 bg-green-700 rounded-md text-white text-sm">
+                        اضافه
+                    </button>
+                </a>
+                <button class="btn-remove-main-list cursor-default w-20 py-2 bg-red-600 rounded-md text-white text-sm"
+                >حذف</button>
+                <div class="main-list flex flex-col mt-2 justify-center"></div>
+            </div>
+        </div>
+        <div class="box-sub-list flex flex-col p-3 w-[70%] invisible border overflow-hidden
+        rounded-lg text-right xs:h-[400px] sm:h-[400px] bg-gray-50
+        xs:w-full xs:mt-5 sm:mt-5 sm:w-full xs:border xs:rounded-lg sm:border sm:rounded-lg
+        rounded-r-none border-r-0">
+            <a href="./../../src/sub-list/create/create-sub-list.html" class="w-20 bg-green-700 py-2 rounded-md text-white text-sm">
+                <button class="create-sub-list w-20">اضافه</button>
+            </a>
+            <div class="div-sub-list mt-5 overflow-y-hidden overflow-x-auto rounded-[0px] xs:min-h-[120px]">
+                <table class="sub-list w-full xs:!w-[600px] mb-1 text-center h-[200px] xs:h-[70px]">
+                    
+                </table>
+            </div>
+            <div class="my-[20px]">
+                <span class="text-sm flex items-center">قیمت کل : <span class="show-sum-price mr-1"></span></span>
+            </div>
+        </div>
+    </div>
+    <div class="warning-page justify-center items-center absolute w-full h-screen bg-[#25252547] hidden"></div>
+    <div class="warning w-[300px] rounded-md absolute text-center py-5 px-7 bg-white hidden">
+        <i class="bi bi-exclamation-triangle-fill block text-5xl text-amber-600"></i>
+        <span class="text-warning block font-semibold text-sm text-red-600 mt-4"></span>
+        <div class="mt-5">
+            <button class="cansel-remove w-20 m rounded ml-1 py-2 text-white text-sm bg-red-600">لغو</button>
+            <button class="continue-delete w-20 m rounded mr-1 py-2 text-white text-sm bg-green-700">بله</button>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
