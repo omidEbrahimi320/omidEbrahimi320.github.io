@@ -57,11 +57,7 @@ function onCreate(event) {
 
 
 function onCancelCreate() {
-    if (isLogedin()) {
-        location.href = './../../auth-form/auth-form.html';
-    } else {
-        location.href = './../../home-page/index.html';
-    }
+    location.href = './../../../index.html';
 }
 
 
@@ -80,7 +76,7 @@ function alertMessage(status, element, message) {
     setTimeout(() => {
         if (element.classList.contains('success')) {
             element.classList.remove('success');
-            location.href = './../../../src/home-page/index.html';
+            location.href = './../../../index.html';
         } else element.classList.remove('error');
     }, DURATION_TIME_ALERT);
 }

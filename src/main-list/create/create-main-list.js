@@ -57,11 +57,7 @@ function onCreateList(event) {
 }
 
 function onCanselCreate() {
-    if (isLogedin()) {
-        location.href = './../../home-page/index.html';
-    } else {
-        location.href = './../../auth-form/auth-form.html';
-    }
+    location.href = './../../../index.html';
 }
 
 
@@ -79,7 +75,7 @@ function alertMessage(status, element, message) {
     setTimeout(() => {
         if (element.classList.contains('success')) {
             element.classList.remove('success');
-            location.href = './../../home-page/index.html';
+            location.href = './../../../index.html';
         } else element.classList.remove('error');
     }, DURATION_TIME_ALERT);
 }

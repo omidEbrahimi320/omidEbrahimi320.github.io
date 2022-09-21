@@ -27,7 +27,7 @@ isLogin();
 
 function isLogin() {
     if (isLogedin()) {
-        location.href = './../home-page/index.html';
+        location.href = './../../../index.html';
     } else {
         const body = document.querySelector('body');
         body.classList.add('flex');
@@ -243,7 +243,7 @@ function alertMessage(status, message) {
         alert.classList.remove('error');
         alert.innerHTML = '';
         if (message === 'ورود با موفقیت انجام شد.') {
-            location.href = './../home-page/index.html';
+            location.href = './../../../index.html';
         }
     }, DURATION_TIME_ALERT)
 }

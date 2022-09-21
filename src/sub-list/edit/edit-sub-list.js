@@ -67,8 +67,7 @@ function onEditSubList(event) {
 }
 
 function onCancelEdit() {
-    location.href = './../../home-page/index.html';
-
+    location.href = './../../../index.html';
 }
 
 function setUrl() {
@@ -94,7 +93,7 @@ function alertMessage(status, element, message) {
     setTimeout(() => {
         if (element.classList.contains('success')) {
             element.classList.remove('success');
-            location.href = './../../../src/home-page/index.html';
+            location.href = './../../../index.html';
         } else element.classList.remove('error');
     }, DURATION_TIME_ALERT);
 }

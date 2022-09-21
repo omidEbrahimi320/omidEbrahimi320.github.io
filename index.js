@@ -1,4 +1,4 @@
-import { isLogedin } from "../../expire-login.js";
+import { isLogedin } from "./expire-login";
 
 
 const warningElement = document.querySelector('.warning');
